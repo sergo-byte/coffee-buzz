@@ -11,3 +11,6 @@ Thumbs.db
 node_modules/
 .vercel/
 *.log
+
+# Local agent tooling data
+.claude-flow/
