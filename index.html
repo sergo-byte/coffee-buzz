@@ -110,10 +110,10 @@
   /* ---------- TICKER ---------- */
   .ticker{background:var(--espresso-2);color:var(--cream);overflow:hidden;border-top:1px solid rgba(247,240,226,.08);}
   .ticker-track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:scroll 34s linear infinite;}
-  .ticker-track span{display:inline-flex;align-items:center;font-family:"Unbounded";font-weight:500;font-size:15px;padding:16px 26px;letter-spacing:.02em;}
+  .ticker-track span{display:inline-flex;align-items:center;font-family:"Unbounded";font-weight:500;font-size:15px;padding:16px 26px;letter-spacing:.02em;transition:color .2s,transform .2s;}
   .ticker-track span::after{content:"✦";color:var(--amber);margin-left:26px;font-size:11px;}
   @keyframes scroll{to{transform:translateX(-50%);}}
-  .ticker:hover .ticker-track{animation-play-state:paused;}
+  .ticker-track span:hover{color:var(--amber);transform:scale(1.12);position:relative;z-index:1;}
 
   /* ---------- SECTION BASE ---------- */
   .sec{padding:108px 0;position:relative;scroll-margin-top:70px;}
@@ -320,7 +320,7 @@
       <div class="menu-cats">
         <!-- Классическое -->
         <div class="reveal">
-          <div class="cat-name">Классическое кофе</div>
+          <div class="cat-name">Классический кофе</div>
           <div class="row"><span class="nm">Двойной эспрессо</span><span class="ml">40 мл</span><span class="dots"></span><span class="pr">150 ₽</span></div>
           <div class="row"><span class="nm">Американо</span><span class="ml">250 мл</span><span class="dots"></span><span class="pr">160 ₽</span></div>
           <div class="row"><span class="nm">Фильтр</span><span class="ml">250 мл</span><span class="dots"></span><span class="pr">180 ₽</span></div>
@@ -342,7 +342,7 @@
 
         <!-- Авторское -->
         <div class="reveal">
-          <div class="cat-name">Авторское кофе</div>
+          <div class="cat-name">Авторский кофе</div>
           <div class="row"><span class="nm">Латте Халва</span><span class="ml">250 мл</span><span class="dots"></span><span class="pr">270 ₽</span></div>
           <div class="row"><span class="nm">Сникерс</span><span class="ml">250 мл</span><span class="dots"></span><span class="pr">270 ₽</span></div>
           <div class="row"><span class="nm">Латте Ежевика&nbsp;Карамель</span><span class="ml">350 мл</span><span class="dots"></span><span class="pr">350 ₽</span></div>
